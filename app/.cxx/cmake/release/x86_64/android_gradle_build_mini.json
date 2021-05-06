@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "F:\\Android Source Code\\app\\src\\main\\jni\\CMakeLists.txt",
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "api_config-Release-x86_64": {
+      "artifactName": "api_config",
+      "buildCommand": "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\x86_64\" api_config",
+      "abi": "x86_64",
+      "output": "F:\\Android Source Code\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libapi_config.so",
+      "runtimeFiles": []
+    }
+  }
+}

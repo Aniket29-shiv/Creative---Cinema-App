@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-messenger:5.12.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bd0f16c7c09b6039ffe008d4856b49a/jetified-facebook-messenger-5.12.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bd0f16c7c09b6039ffe008d4856b49a/jetified-facebook-messenger-5.12.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bd0f16c7c09b6039ffe008d4856b49a/jetified-facebook-messenger-5.12.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-messenger/5.12.1/b0966e525e95829ae406140de47c7c332fd54f44/facebook-messenger-5.12.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-messenger/5.12.1/a4b448a8ffded9877b8978d8c21ff8c6122da2c6/facebook-messenger-5.12.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

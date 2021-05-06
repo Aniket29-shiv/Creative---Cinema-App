@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ctx=".PapalPaymentActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Success Status:"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:layout_below="@id/tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rounded_grey_outline"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/finish_paymentBt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/go_back"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_action_back_arrow"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

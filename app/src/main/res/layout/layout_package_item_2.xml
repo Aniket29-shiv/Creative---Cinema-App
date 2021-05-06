@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:background="@drawable/border_back_primary_color"
+    android:id="@+id/linear_layout"
+    android:layout_marginTop="@dimen/spacing_middle">
+
+    <TextView
+        android:id="@+id/package_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="$4.99 Per Month"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deactivate_account"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_deactivate_info"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_info_blue"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp">
+
+        <EditText
+            android:id="@+id/pass_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/reason_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:hint="@string/reason_to_deactivate_account"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/cancel_bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/ccl_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                />
+
+            <Button
+                android:id="@+id/ok_bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/ccl_ok"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

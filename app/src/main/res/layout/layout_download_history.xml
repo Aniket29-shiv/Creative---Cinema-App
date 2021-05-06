@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="13dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/item_view">
+
+    <ImageView
+        android:id="@+id/file_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/file"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/file_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Big buck bunny"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_toRightOf="@id/file_iv"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/file_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Size: 12MB"
+        android:layout_below="@id/file_name_tv"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/file_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Date: 12-12-12 10:30PM"
+        android:layout_below="@id/file_name_tv"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        />
+
+</RelativeLayout>

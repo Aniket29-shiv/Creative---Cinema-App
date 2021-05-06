@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_middle"
+    android:layout_marginLeft="@dimen/spacing_middle"
+    android:layout_marginRight="@dimen/spacing_middle"
+    android:layout_marginTop="@dimen/spacing_large"
+    android:clipToPadding="false"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false"
+    app:layout_collapseMode="pin"
+    android:fitsSystemWindows="true"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true">
+
+        <ImageButton
+            android:id="@+id/bt_menu"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_menu_grey" />
+
+        <TextView
+            android:id="@+id/page_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/bt_menu"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"/>
+
+
+        <ImageButton
+            android:id="@+id/search_iv"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_search_grey"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

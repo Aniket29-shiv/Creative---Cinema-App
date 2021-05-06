@@ -1,0 +1,186 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+
+
+    // this is for signed apk generate problem for lint
+    /*lintOptions {
+        checkReleaseBuilds false
+    }*/
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "com.oxoo.spagreen"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 34
+        versionName "1.3.4"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        manifestPlaceholders = [
+                onesignal_app_id               : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        android {
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/jni/CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    ndkVersion '21.3.6528147'
+}
+
+dependencies {
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation project(path: ':nativetemplates')
+    def room_version = "2.2.5"
+    def lifecycle_version = "2.2.0"
+    def arch_version = "2.1.0"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:17.6.0'
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    //firebase auth
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.1'
+    implementation "com.google.firebase:firebase-auth:19.4.0"
+    //implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    // Required only if Facebook login support is required
+    // Find the latest Facebook SDK releases here: https://goo.gl/Ce5L94
+    implementation 'com.facebook.android:facebook-android-sdk:5.12.1'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'             // range seek bar
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha06'
+    implementation "android.arch.work:work-runtime:1.0.1"
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    // shimmer layout
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation "androidx.room:room-rxjava2:$room_version"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    //Auto Download and Update
+    implementation 'com.github.Piashsarker:AndroidAppUpdateLibrary:1.0.3'
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    // ripple effect
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    // stripe
+    implementation 'com.stripe:stripe-android:16.0.0'
+    implementation 'com.stripe:stripe-java:5.36.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    // download manager
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    implementation 'com.mani:ThinDownloadManager:1.4.0'
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.5"
+    
+    // paypal
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    // razor pay
+    implementation 'com.razorpay:checkout:1.5.12'
+    // space bottom navigation view
+    implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+    // card slider
+    implementation 'com.github.IslamKhSh:CardSlider:0.4'
+    implementation 'com.google.android:flexbox:0.3.2'
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[3.13.0, 3.99.99]'
+    implementation 'com.hootsuite.android:nachos:1.1.1'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //admob
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    // exo player
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.11.4'
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.7.3'
+    implementation 'com.google.android.exoplayer:extension-cast:2.7.3'
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+    implementation 'com.google.android.libraries.cast.companionlibrary:ccl:2.8.4'
+    // start app ad
+    implementation 'com.startapp:inapp-sdk:4.6.3'
+    implementation 'com.github.ixiDev:GDPRChecker:v0.2'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    //bottom navigation
+    implementation 'com.github.volsahin:bottomify-navigation-view:1.0.2'
+    //Facebook audiene network
+    implementation 'com.facebook.android:audience-network-sdk:6.1.0'
+}

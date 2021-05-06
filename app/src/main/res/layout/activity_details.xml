@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ctx=".DetailsActivity">
+
+    <include
+        android:id="@+id/content_details"
+        layout="@layout/content_details"/>
+
+    <LinearLayout
+        android:id="@+id/subscribe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back_white"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subscription_required"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="150dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paid_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_info_blue"/>
+
+            <Button
+                android:id="@+id/subscribe_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribe_text"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rounded_primary"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

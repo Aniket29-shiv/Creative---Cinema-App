@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/ss_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_server"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/grey_20"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_transparent"
+        android:layout_below="@id/close_iv"
+        android:layout_marginTop="6dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/serverRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/serial_no_tv"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        tools:text="#"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/plan_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        tools:text="Half Yearly"
+        android:textSize="10sp"
+        android:layout_marginRight="4dp"/>
+
+    <TextView
+        android:id="@+id/purchase_date_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        tools:text="10-10-2019"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/from_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        tools:text="10-10-2019"/>
+
+    <TextView
+        android:id="@+id/to_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        tools:text="10-10-2019"/>
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:text="Cancelled"/>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.libraries.cast.companionlibrary:ccl:2.8.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/743705824e33386029e2e1d5ae483c54/jetified-ccl-2.8.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/743705824e33386029e2e1d5ae483c54/jetified-ccl-2.8.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/743705824e33386029e2e1d5ae483c54/jetified-ccl-2.8.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/743705824e33386029e2e1d5ae483c54/jetified-ccl-2.8.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.libraries.cast.companionlibrary/ccl/2.8.4/7c9982f1cc3964932b3599abaaf40522f1ed8cfa/ccl-2.8.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.libraries.cast.companionlibrary/ccl/2.8.4/3de4515310e3fe30f332ded57298bae99dd3def9/ccl-2.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

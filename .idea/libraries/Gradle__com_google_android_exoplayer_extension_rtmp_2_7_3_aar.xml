@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:extension-rtmp:2.7.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e79ff8ee6a740c147ac4ca7b588715/jetified-extension-rtmp-2.7.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e79ff8ee6a740c147ac4ca7b588715/jetified-extension-rtmp-2.7.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06e79ff8ee6a740c147ac4ca7b588715/jetified-extension-rtmp-2.7.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.7.3/ec3399591cb253af1da7cd1c380f2ea53e831909/extension-rtmp-2.7.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.7.3/f63ae93b14ae10a36e9bcbf732b56c72a6abada/extension-rtmp-2.7.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

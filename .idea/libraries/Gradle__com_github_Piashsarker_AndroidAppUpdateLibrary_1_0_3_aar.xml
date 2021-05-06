@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Piashsarker:AndroidAppUpdateLibrary:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25e3fb7743dfc9295f4291c1006eb5d9/jetified-AndroidAppUpdateLibrary-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25e3fb7743dfc9295f4291c1006eb5d9/jetified-AndroidAppUpdateLibrary-1.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25e3fb7743dfc9295f4291c1006eb5d9/jetified-AndroidAppUpdateLibrary-1.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Piashsarker/AndroidAppUpdateLibrary/1.0.3/fb77b0e5a84ec95bc936964b76d99272ebb06ee3/AndroidAppUpdateLibrary-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

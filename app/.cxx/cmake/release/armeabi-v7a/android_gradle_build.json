@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "F:/Android Source Code/app/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/anike/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/anike/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dapi_config_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "F:\\Android Source Code\\app\\src\\main\\jni\\CMakeLists.txt",
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "api_config-Release-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Android Source Code\\app\\.cxx\\cmake\\release\\armeabi-v7a\" api_config",
+      "buildType": "release",
+      "toolchain": "2954295037",
+      "abi": "armeabi-v7a",
+      "artifactName": "api_config",
+      "files": [
+        {
+          "src": "F:\\Android Source Code\\app\\src\\main\\jni\\api_config.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "F:\\Android Source Code\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libapi_config.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2954295037": {
+      "cppCompilerExecutable": "C:\\Users\\anike\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

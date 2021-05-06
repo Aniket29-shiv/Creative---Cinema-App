@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#ED1C24</color>
+    <color name="colorPrimaryDark">#8F012A</color>
+    <color name="colorAccent">#FF5733</color>
+
+    <!--color for TextInputLayout outline color-->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/colorPrimary</color>
+
+    <!--for tv-->
+    <color name="colorPrimaryTV">#2B2A2A</color>
+    <color name="colorPrimaryDarkTV">#000000</color>
+    <color name="colorButtonFocusedTV">#5C6BC0</color>
+    <color name="colorButtonPressedTV">#C70039</color>
+    <color name="colorButtonSelectedTV">#78909C</color>
+
+
+    <color name="paypalColor">#ffc43a</color>
+    <color name="paypalColorDark">#D39916</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="default_text">#8B8B8B</color>
+    <color name="black">#000000</color>
+    <color name="black_window">#111111</color>
+    <color name="black_window_light">#131313</color>
+    <color name="nav_bg">#424242</color>
+    <color name="nav_head_bg">#202020</color>
+
+    <color name="dark">#424242</color>
+    <color name="black_1_transarent">#ED111111</color>
+    <color name="black_transparent">#2D000000</color>
+    <color name="grey_transparent">#417C7C7C</color>
+    <color name="grey_transparent2">#E97C7C7C</color>
+
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+    <color name="overlay_dark_90">#E6000000</color>
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_90">#263238</color>
+
+
+    <!--Material color list from https://material.io/guidelines/style/color.html-->
+
+
+    <color name="red_600">#E53935</color>
+
+    <color name="green_500">#4CAF50</color>
+
+    <color name="blue_grey_300">#90A4AE</color>
+
+
+    <color name="red_400">#EF5350</color>
+    <color name="indigo_400">#5C6BC0</color>
+    <color name="light_green_400">#9CCC65</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="blue_grey_400">#78909C</color>
+
+    <color name="grey_400">#BDBDBD</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="light_theme_color">#FFFFFF</color>
+
+    //bottom navigation for dark mood
+    <color name="bottomifyActiveColorDark">#F9FAFE</color>
+    <color name="bottomifyBackgroundColorDark">#222327</color>
+    <color name="bottomifyPassiveColorDark">#AFB0B4</color>
+    <color name="bottomifyPressedColorDark">#2E2F33</color>
+
+    //bottom navigation for light mood
+    <color name="bottomifyActiveColorLight">#ED1C24</color>
+    <color name="bottomifyBackgroundColorLight">#FF9F96</color>
+    <color name="bottomifyPassiveColorLight">#585858</color>
+    <color name="bottomifyPressedColorLight">#2E2F33</color>
+
+</resources>

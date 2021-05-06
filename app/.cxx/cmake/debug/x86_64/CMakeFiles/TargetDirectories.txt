@@ -1,0 +1,3 @@
+F:/Android Source Code/app/.cxx/cmake/debug/x86_64/CMakeFiles/api_config.dir
+F:/Android Source Code/app/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+F:/Android Source Code/app/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

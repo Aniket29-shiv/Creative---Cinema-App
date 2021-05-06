@@ -1,0 +1,7 @@
+Executable : C:\Users\anike\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\Android Source Code\app\.cxx\cmake\debug\x86
+api_config
+jvmArgs : 
+
