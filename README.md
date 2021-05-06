@@ -10,8 +10,8 @@
 </div>
 
 
-<p align="center"> 
-  
+<img src="tenor (1).gif" width="50" height="50"> 
+
 ## Demo app 👉
-</p>
+
 <p align="center"><img src="creative-cinema-demo.gif" width="300" title="Creative-Cinema"></p>
