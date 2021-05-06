@@ -1,2 +1,4 @@
-# oxoo-v1.2
-with subscription &amp; TV Support
+# Creative - A Cinema App
+## Android app for streaming movies and series
+
+* Demo app
